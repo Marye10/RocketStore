@@ -10,11 +10,22 @@ using System.Windows.Forms;
 
 namespace RocketStore
 {
+
     public partial class Form1 : Form
     {
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void calculadoraToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void informaciónToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
