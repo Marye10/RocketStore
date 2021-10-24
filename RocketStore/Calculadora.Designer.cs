@@ -183,7 +183,7 @@
             this.BtoDividir.TabIndex = 11;
             this.BtoDividir.Text = "/";
             this.BtoDividir.UseVisualStyleBackColor = true;
-            this.BtoDividir.Click += new System.EventHandler(this.BtoDividir_Click);
+            this.BtoDividir.Click += new System.EventHandler(this.clickOperador);
             // 
             // BtoBorrarTodo
             // 
@@ -204,6 +204,7 @@
             this.BtoMultiplicar.TabIndex = 13;
             this.BtoMultiplicar.Text = "x";
             this.BtoMultiplicar.UseVisualStyleBackColor = true;
+            this.BtoMultiplicar.Click += new System.EventHandler(this.clickOperador);
             // 
             // BtoEliminar
             // 
@@ -224,6 +225,7 @@
             this.BtoResta.TabIndex = 15;
             this.BtoResta.Text = "-";
             this.BtoResta.UseVisualStyleBackColor = true;
+            this.BtoResta.Click += new System.EventHandler(this.clickOperador);
             // 
             // BtoSuma
             // 
@@ -234,7 +236,7 @@
             this.BtoSuma.TabIndex = 16;
             this.BtoSuma.Text = "+";
             this.BtoSuma.UseVisualStyleBackColor = true;
-            this.BtoSuma.Click += new System.EventHandler(this.BtoSuma_Click);
+            this.BtoSuma.Click += new System.EventHandler(this.clickOperador);
             // 
             // BtoResultado
             // 

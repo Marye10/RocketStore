@@ -42,7 +42,27 @@ namespace RocketStore
 
         private void BtoResultado_Click(object sender, EventArgs e)
         {
-
+            Numero2 = Convert.ToDouble(BtoResultado.Text);
+            if(Operador == '+')
+            {
+                BtoResultado.Text = (Numero1 + Numero2).ToString();
+                Numero1 = Convert.ToDouble(BtoResultado.Text);
+            }
+            else if(Operador == '-')
+            {
+                BtoResultado.Text = (Numero1 - Numero2).ToString();
+                Numero1 = Convert.ToDouble(BtoResultado.Text);
+            }
+            else if (Operador == 'x')
+            {
+                BtoResultado.Text = (Numero1 * Numero2).ToString();
+                Numero1 = Convert.ToDouble(BtoResultado.Text);
+            }
+            else if (Operador == '/')
+            {
+                BtoResultado.Text = (Numero1 / Numero2).ToString();
+                Numero1 = Convert.ToDouble(BtoResultado.Text);
+            }
         }
 
         private void BtoCero_Click(object sender, EventArgs e)
@@ -52,11 +72,6 @@ namespace RocketStore
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void BtoDividir_Click(object sender, EventArgs e)
         {
 
         }
@@ -108,12 +123,13 @@ namespace RocketStore
             var boton = ((Button)sender);
             agregarNumero(boton.Text);
             Operador = Convert.ToChar(boton.Text);
+            BtoResultado.Text = "0";
         }
 
-        private void BtoSuma_Click(object sender, EventArgs e)
-        {
-            Numero1 = Convert.ToDouble(BtoResultado.Text);
-            Operador = '+';
-        }
+     //   private void BtoSuma_Click(object sender, EventArgs e)
+     // {
+     //      Numero1 = Convert.ToDouble(BtoResultado.Text);
+     //    Operador = '+';
+     //}
     }
 }
