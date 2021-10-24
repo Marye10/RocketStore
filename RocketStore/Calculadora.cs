@@ -12,6 +12,9 @@ namespace RocketStore
 {
     public partial class Calculadora : Form
     {
+        double Numero1 = 0, Numero2 = 0;
+        char Operador;
+
         public Calculadora()
         {
             InitializeComponent();
@@ -98,6 +101,19 @@ namespace RocketStore
         {
             var boton = ((Button)sender);
             agregarNumero(boton.Text);
+        }
+        private void clickOperador(Object sender, EventArgs e)
+        {
+            Numero1 = Convert.ToDouble(BtoResultado.Text);
+            var boton = ((Button)sender);
+            agregarNumero(boton.Text);
+            Operador = Convert.ToChar(boton.Text);
+        }
+
+        private void BtoSuma_Click(object sender, EventArgs e)
+        {
+            Numero1 = Convert.ToDouble(BtoResultado.Text);
+            Operador = '+';
         }
     }
 }

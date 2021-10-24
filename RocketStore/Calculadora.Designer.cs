@@ -54,6 +54,7 @@
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(12, 9);
+            this.textBox1.MaxLength = 21;
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
@@ -233,6 +234,7 @@
             this.BtoSuma.TabIndex = 16;
             this.BtoSuma.Text = "+";
             this.BtoSuma.UseVisualStyleBackColor = true;
+            this.BtoSuma.Click += new System.EventHandler(this.BtoSuma_Click);
             // 
             // BtoResultado
             // 
