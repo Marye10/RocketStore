@@ -30,10 +30,12 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
-            this.rocketStoreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip3 = new System.Windows.Forms.MenuStrip();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip2.SuspendLayout();
+            this.calculadoraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.informaciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pagarCuentasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salirToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,24 +49,20 @@
             // 
             // menuStrip2
             // 
-            this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.rocketStoreToolStripMenuItem});
             this.menuStrip2.Location = new System.Drawing.Point(0, 24);
             this.menuStrip2.Name = "menuStrip2";
             this.menuStrip2.Size = new System.Drawing.Size(800, 24);
             this.menuStrip2.TabIndex = 1;
             this.menuStrip2.Text = "menuStrip2";
             // 
-            // rocketStoreToolStripMenuItem
-            // 
-            this.rocketStoreToolStripMenuItem.Name = "rocketStoreToolStripMenuItem";
-            this.rocketStoreToolStripMenuItem.Size = new System.Drawing.Size(106, 20);
-            this.rocketStoreToolStripMenuItem.Text = "Buscar Producto";
-            // 
             // menuStrip3
             // 
             this.menuStrip3.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.salirToolStripMenuItem});
+            this.salirToolStripMenuItem,
+            this.calculadoraToolStripMenuItem,
+            this.informaciónToolStripMenuItem,
+            this.pagarCuentasToolStripMenuItem,
+            this.salirToolStripMenuItem1});
             this.menuStrip3.Location = new System.Drawing.Point(0, 0);
             this.menuStrip3.Name = "menuStrip3";
             this.menuStrip3.Size = new System.Drawing.Size(800, 24);
@@ -73,9 +71,38 @@
             // 
             // salirToolStripMenuItem
             // 
+            this.salirToolStripMenuItem.Font = new System.Drawing.Font("Times New Roman", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
-            this.salirToolStripMenuItem.Text = "Salir";
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(104, 20);
+            this.salirToolStripMenuItem.Text = "Buscar Productos";
+            // 
+            // calculadoraToolStripMenuItem
+            // 
+            this.calculadoraToolStripMenuItem.Font = new System.Drawing.Font("Times New Roman", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.calculadoraToolStripMenuItem.Name = "calculadoraToolStripMenuItem";
+            this.calculadoraToolStripMenuItem.Size = new System.Drawing.Size(81, 20);
+            this.calculadoraToolStripMenuItem.Text = "Calculadora";
+            // 
+            // informaciónToolStripMenuItem
+            // 
+            this.informaciónToolStripMenuItem.Font = new System.Drawing.Font("Times New Roman", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.informaciónToolStripMenuItem.Name = "informaciónToolStripMenuItem";
+            this.informaciónToolStripMenuItem.Size = new System.Drawing.Size(82, 20);
+            this.informaciónToolStripMenuItem.Text = "Información";
+            // 
+            // pagarCuentasToolStripMenuItem
+            // 
+            this.pagarCuentasToolStripMenuItem.Font = new System.Drawing.Font("Times New Roman", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pagarCuentasToolStripMenuItem.Name = "pagarCuentasToolStripMenuItem";
+            this.pagarCuentasToolStripMenuItem.Size = new System.Drawing.Size(88, 20);
+            this.pagarCuentasToolStripMenuItem.Text = "Pagar cuentas";
+            // 
+            // salirToolStripMenuItem1
+            // 
+            this.salirToolStripMenuItem1.Font = new System.Drawing.Font("Times New Roman", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.salirToolStripMenuItem1.Name = "salirToolStripMenuItem1";
+            this.salirToolStripMenuItem1.Size = new System.Drawing.Size(44, 20);
+            this.salirToolStripMenuItem1.Text = "Salir";
             // 
             // Form1
             // 
@@ -87,9 +114,7 @@
             this.Controls.Add(this.menuStrip3);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
-            this.Text = "Rocketstore";
-            this.menuStrip2.ResumeLayout(false);
-            this.menuStrip2.PerformLayout();
+            this.Text = "  ";
             this.menuStrip3.ResumeLayout(false);
             this.menuStrip3.PerformLayout();
             this.ResumeLayout(false);
@@ -101,9 +126,12 @@
 
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.MenuStrip menuStrip2;
-        private System.Windows.Forms.ToolStripMenuItem rocketStoreToolStripMenuItem;
         private System.Windows.Forms.MenuStrip menuStrip3;
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem calculadoraToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem informaciónToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pagarCuentasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem1;
     }
 }
 
